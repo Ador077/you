@@ -459,9 +459,6 @@ def rcrack(uid,pwx,tl):
             'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
 }
 
-
-
-
             lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
 
             log_cookies=session.cookies.get_dict().keys()
@@ -512,3 +509,7 @@ def rcrack(uid,pwx,tl):
 
 xxr()
 
+
+
+
+            
