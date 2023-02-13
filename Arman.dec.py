@@ -459,7 +459,6 @@ def rcrack(uid,pwx,tl):
             'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
 }
 
-response = requests.get('https://mbasic.facebook.com/', cookies=cookies, headers=headers)
 
 
 
